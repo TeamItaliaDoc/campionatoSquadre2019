@@ -239,6 +239,7 @@ function calcolaClassifica()
     var boards = '';
     var score1 = 0;
     var score2 = 0;
+    var partitaConclusa = false;
     //Riga con nomi teams    
     var stRiga = '<tr class="classifica-nameTeam">' +
             '<td style="background-color:gray;"></td><td style="background-color:gray;"></td><td style="background-color:gray;"></td><td style="background-color:gray;">' + 
@@ -280,6 +281,7 @@ function calcolaClassifica()
             stile = '';
             stileTD = '';
             risultato = '';
+            partitaConclusa = false;
             if  (gruppo == gruppoAvversario)
             {
                 url = '';
@@ -297,6 +299,7 @@ function calcolaClassifica()
                         boards = matchs[partita].boards;
                         score1 = matchs[partita].score1;
                         score2 = matchs[partita].score2;
+                        partitaConclusa = matchs[partita].concluso;
                     } 
                     //team da stampare sulla riga è team2
                     if (matchs[partita].team2 == gruppo && matchs[partita].team1 == gruppoAvversario)
@@ -305,6 +308,7 @@ function calcolaClassifica()
                         boards = matchs[partita].boards;
                         score1 = matchs[partita].score2;
                         score2 = matchs[partita].score1;
+                        partitaConclusa = matchs[partita].concluso;
                     }
                 }
 
@@ -312,27 +316,27 @@ function calcolaClassifica()
                 if (boards > 0)
                 {
                     //Se terminata
-                    if (matchs[partita].concluso)
+                    if (partitaConclusa)
                     {
                         //Pareggio
                         if (score1 == score2)
                         {
                             risultato = '0.5 - 0.5 <BR> (' + score1 + ' - ' + score2 + ')';
-                            stileTD = 'style="background-color:#84b2ed;"';
+                            stileTD = 'style="background-color:#84b2ed;"';   //PAREGGIO
                             stile = 'color:black;font-weight: bold;';
                         } 
                         //Vinto team 1
                         if (score1 > score2)
                         {
                             risultato = '1 - 0 <BR> (' + score1 + ' - ' + score2 + ')';
-                            stileTD = 'style="background-color:green;"';
+                            stileTD = 'style="background-color:#4bc74b;"'; //VINTO
                             stile = 'color:black;font-weight: bold;';
                         } 
                         //Vinto team 2
                         if (score1 < score2)
                         {
-                            risultato = '1 - 0 <BR> (' + score1 + ' - ' + score2 + ')';
-                            stileTD = 'style="background-color:red;"';
+                            risultato = '0 - 1 <BR> (' + score1 + ' - ' + score2 + ')';
+                            stileTD = 'style="background-color:#f75959;"';  //PERSO
                             stile = 'color:black;font-weight: bold;';
                         } 
                     } else {
