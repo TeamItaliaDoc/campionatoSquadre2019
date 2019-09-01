@@ -23,21 +23,21 @@ teams['gli-ultimi-saranno-i-primi-i-secondi-o-i-contorni']={"name":"gli ultimi s
 teams['team-fastfood-doc']={"name":"Team FastFood DOC","club_id":79318,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79318.d534e8da.50x50o.927f535ba0c6.png","url":"https://www.chess.com/club/team-fastfood-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
 
 var matchs = [];
-matchs[11] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031850", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[12] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031852", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[13] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1031854", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[14] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031856", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[15] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1031862", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[16] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1031858", "daCaricare":true, "punti1":0, "punti2":0};
+matchs[11] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031850", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[12] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031852", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[13] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1031854", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[14] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031856", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[15] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1031862", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[16] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1031858", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
-/*matchs[21] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[22] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[23] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[24] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[25] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
-matchs[26] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
+/*matchs[21] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[22] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[23] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[24] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[25] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[26] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
-matchs[31] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0};
+matchs[31] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 */
 
 //teams['team-italia-doc']={"name":"Team Italia DOC","club_id":79318,"icon":"https://images.chesscomfiles.com/uploads/v1/group/65264.ad20dc08.50x50o.1ba052e2d947.png","url":"https://www.chess.com/club/team-fastfood-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
@@ -91,9 +91,10 @@ function caricaMatch(index, url)
             teams[team1].punti += matchs[index].punti1;
             teams[team2].punti += matchs[index].punti2;
 
-            //Se terminata
-            if (matchs[index].boards * 2 == matchs[index].score1 + matchs[index].score2)
+            //Se terminata anche matematicamente
+            if (matchs[index].boards * 2 == matchs[index].score1 + matchs[index].score2 || matchs[index].boards < matchs[index].score1 || matchs[index].boards < matchs[index].score2)
             {
+                matchs[index].concluso = true;
                 teams[team1].matchConclusi ++;
                 teams[team2].matchConclusi ++;
                 if (matchs[index].score1 > matchs[index].score2)
@@ -114,10 +115,16 @@ function caricaMatch(index, url)
                 username1 = data.teams.team1.players[i].username;
                 username2 = data.teams.team2.players[i].username;
                 //Se partita terminata calcolo punteggio
+                //I GIOCATORI NON SONO ABBINATI. Con questi dati non posso 
+                //  calcolare tie-break
                 risultato = data.teams.team1.players[i].played_as_white;
-                setPunti(username1, username2, risultato);
+                setPunti(username1, risultato);
                 risultato = data.teams.team1.players[i].played_as_black;
-                setPunti(username1, username2, risultato);
+                setPunti(username1, risultato);
+                risultato = data.teams.team2.players[i].played_as_white;
+                setPunti(username2, risultato);
+                risultato = data.teams.team2.players[i].played_as_black;
+                setPunti(username2, risultato);
             }
         }
 
@@ -179,24 +186,29 @@ function calcolaClassifica()
     for (var nameTeam in teams)
     {
         teams[nameTeam].punti -= teams[nameTeam].penalità;
+        teams[nameTeam].puntiConclusi -= teams[nameTeam].penalità;
     }
     //Imposto posizione e salvo
     var gruppo = '';
-    var max = 0;
+    var max = -1;
     var maxSpareggio = 0;
     var posizione = 0;
-    var oldMax = 0;
-    var oldSpareggio = 0;
+    var oldMax = -1;
+    var oldSpareggio = -1;
     var nPareggi = 0;
-    while (max > -1)
+    var puntiClassifica = 0;
+    while (max > -2)
     {
-        max = -1;
+        max = -10;
         maxSpareggio = -1;
         for (var i in teams)
         {
-            if ((teams[i].posizione == 0) && (teams[i].punti > max || (teams[i].punti == max) && teams[i].puntiSpareggio > maxSpareggio)) {
+            //Scelgo i punti (da conclusi oi in corso)
+            puntiClassifica = teams[i].puntiConclusi;
+
+            if ((teams[i].posizione == 0) && (puntiClassifica > max || (puntiClassifica == max) && teams[i].puntiSpareggio > maxSpareggio)) {
                 gruppo = i;
-                max = teams[i].punti;
+                max = puntiClassifica;
                 maxSpareggio = teams[i].puntiSpareggio;
             }
         }
@@ -242,7 +254,7 @@ function calcolaClassifica()
             '<td class="classifica-icon" style="background-color:#E2E2FF;">Pos.</td> <td style="background-color:#E2E2FF;">Team</td><td style="background-color:#E2E2FF;"></td>'+
             '<td class="classifica-icon">Punti</td>' +
             //'<td class="classifica-icon">Tie Break</td>'+
-            '<td class="classifica-icon">Match conclusi</td><td class="classifica-icon" >Punti match conclusi</td><td class="classifica-icon">Penalità</td>' +
+            '<td class="classifica-icon">Match conclusi</td><td class="classifica-icon" >Punti in corso</td><td class="classifica-icon">Penalità</td>' +
             '<td class="classifica-col1SEP"></td>'; 
     for (var i in classificaTeams)         
         stRiga += '<td  class="classifica-icon">  <img class="classifica-avatar" src="' + teams[classificaTeams[i]].icon + '">';
@@ -256,10 +268,10 @@ function calcolaClassifica()
             '<td class="classifica-risultati">' + teams[gruppo].posizione + '</td>' +
             '<td class="classifica-risultati" style="border: 0px;"> <a style="color:black;text-decoration: none;font-weight: normal;" href="' + teams[classificaTeams[i]].url + '" target=”_blank”> ' + teams[classificaTeams[i]].name + '</a></td>' +
             '<td class="classifica-risultati" style="border: 0px;"> <img class="classifica-avatar" src="' + teams[classificaTeams[i]].icon + '"></td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].punti + '</td>' +
+            '<td class="classifica-risultati">' + teams[gruppo].puntiConclusi + '</td>' + //DA VERIFICARE A FINE CLASSIFICA ????
             //'<td class="classifica-risultati">' + teams[gruppo].puntiSpareggio + '</td>' +
             '<td class="classifica-risultati">' + teams[gruppo].matchConclusi + '</td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].puntiConclusi + '</td>' +
+            '<td class="classifica-risultati">' + teams[gruppo].punti + '</td>' +   //DA VERIFICARE A FINE CLASSIFICA ????
             '<td class="classifica-risultati">' + (teams[gruppo].penalità*-1) + '</td>' +
             '<td class="classifica-col1SEP" style="border: 0px;"></td>'; 
         for (var ii in classificaTeams)         
@@ -270,6 +282,7 @@ function calcolaClassifica()
             risultato = '';
             if  (gruppo == gruppoAvversario)
             {
+                url = '';
                 stile = 'background-color:#b3b3b3;';
             } else {
                 //Ricerco partita
@@ -299,7 +312,7 @@ function calcolaClassifica()
                 if (boards > 0)
                 {
                     //Se terminata
-                    if (boards * 2 == score1 + score2)
+                    if (matchs[partita].concluso)
                     {
                         //Pareggio
                         if (score1 == score2)

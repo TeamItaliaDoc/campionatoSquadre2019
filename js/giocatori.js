@@ -115,14 +115,11 @@ function creaGiocatore(apiUsername) {
     giocatori[username].userPatte = [];
 }
 
-function setPunti(username1, username2, risultato)
+function setPunti(username, risultato)
 {
     //Se non esiste lo creo
-    if (! giocatori[username1]) {
-        creaGiocatore(username1);
-    }
-    if (! giocatori[username2]) {
-        creaGiocatore(username2);
+    if (! giocatori[username]) {
+        creaGiocatore(username);
     }
 
     //Se risultato non definito la partita non è finita
@@ -131,24 +128,19 @@ function setPunti(username1, username2, risultato)
 
     //aggiorno punteggio
     if ( risultato == 'win') {
-        giocatori[username1].punti ++;
-        giocatori[username1].vinte ++;
-        giocatori[username1].userVinte.push(username2);
-        giocatori[username2].perse ++;
+        giocatori[username].punti ++;
+        giocatori[username].vinte ++;
+        //???????? NON POSSO CALCOLARE TIE-BREK
+        //giocatori[username].userVinte.push(username2);
     } else {
         if ((risultato == 'agreed') || (risultato == 'repetition')  || (risultato == 'timevsinsufficient') || 
         (risultato == '50move') || (risultato == 'insufficient') || (risultato == 'stalemate')  ){
-                giocatori[username1].punti += 0.5;
-                giocatori[username1].patte ++;
-                giocatori[username1].userPatte.push(username2);
-                giocatori[username2].punti += 0.5;
-                giocatori[username2].patte ++;
-                giocatori[username2].userPatte.push(username1);
+                giocatori[username].punti += 0.5;
+                giocatori[username].patte ++;
+                //???????? NON POSSO CALCOLARE TIE-BREK
+                //giocatori[username].userPatte.push(username2);
             } else {
-                giocatori[username2].punti ++;
-                giocatori[username2].vinte ++;
-                giocatori[username2].userVinte.push(username1);
-                giocatori[username1].perse ++;
+                giocatori[username].perse ++;
             }
     }
 }
@@ -219,7 +211,7 @@ function stampaGiocatore(username)
         '    </td>' +
         '    <td width=7px></td>' +
         '    <td><div>' +
-        '            <a class="username" href="' + giocatori[username].id + '" target=”_blank”> ' + giocatori[username].displayName + '</a>' +
+        '            <a class="username" href="' + giocatori[username].url + '" target=”_blank”> ' + giocatori[username].displayName + '</a>' +
         '        </div> <div>  (' + giocatori[username].elo + ') </div>' +
         '        </td>' +    
         '    </tr></table>' +
