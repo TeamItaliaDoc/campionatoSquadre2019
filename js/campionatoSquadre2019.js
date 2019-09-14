@@ -31,11 +31,11 @@ matchs[15] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/ma
 matchs[16] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1031858", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
 matchs[21] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1041516", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[22] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1041510", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[23] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1041514", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[24] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1041512", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[22] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1041510", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[23] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1041514", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[24] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1041512", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[25] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1041518", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[26] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1041520", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[26] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1041520", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
 /*
 matchs[31] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
@@ -232,9 +232,9 @@ function calcolaClassifica()
     var oldSpareggio = -1;
     var nPareggi = 0;
     var puntiClassifica = 0;
-    while (max > -2)
+    while (max > -100)
     {
-        max = -10;
+        max = -200;
         maxSpareggio = -1;
         for (var i in teams)
         {
@@ -247,7 +247,7 @@ function calcolaClassifica()
                 maxSpareggio = teams[i].puntiSpareggio;
             }
         }
-        if (max > -1) 
+        if (max > -100) 
         {
             if (oldMax == max && oldSpareggio == maxSpareggio )
             {
@@ -290,7 +290,7 @@ function calcolaClassifica()
             '<td class="classifica-icon" style="background-color:#E2E2FF;">Pos.</td> <td style="background-color:#E2E2FF;">Team</td><td style="background-color:#E2E2FF;"></td>'+
             '<td class="classifica-icon">Punti</td>' +
             //'<td class="classifica-icon">Tie Break</td>'+
-            '<td class="classifica-icon">Match conclusi</td><td class="classifica-icon" >Punti in corso</td><td class="classifica-icon">Penalità</td>' +
+            '<td class="classifica-icon">Match risolti</td><td class="classifica-icon" >Penalità</td><td class="classifica-icon">Match in corso</td>' +
             '<td class="classifica-col1SEP"></td>'; 
     for (var i in classificaTeams)         
         stRiga += '<td  class="classifica-icon">  <img class="classifica-avatar" src="' + teams[classificaTeams[i]].icon + '">';
@@ -307,8 +307,8 @@ function calcolaClassifica()
             '<td class="classifica-risultati">' + teams[gruppo].puntiConclusi + '</td>' + //DA VERIFICARE A FINE CLASSIFICA ????
             //'<td class="classifica-risultati">' + teams[gruppo].puntiSpareggio + '</td>' +
             '<td class="classifica-risultati">' + teams[gruppo].matchConclusi + '</td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].punti + '</td>' +   //DA VERIFICARE A FINE CLASSIFICA ????
             '<td class="classifica-risultati">' + (teams[gruppo].penalità*-1) + '</td>' +
+            '<td class="classifica-risultati">' + teams[gruppo].punti + '</td>' +   //DA VERIFICARE A FINE CLASSIFICA ????
             '<td class="classifica-col1SEP" style="border: 0px;"></td>'; 
         for (var ii in classificaTeams)         
         {
