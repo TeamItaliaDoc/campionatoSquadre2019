@@ -9,18 +9,18 @@ var calcolaClassificaRun = false;
 var classificaTeams = [];
 
 var teams = [];
-teams['pan-di-via']={"name":"Pan di Via", "club_id":79508,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79508.29404629.50x50o.d9ee86bdbcb1.png","url":"https://www.chess.com/club/pan-di-via","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['i-bagna-cauda']={"name":"I Bagna Cauda","club_id":79538,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79538.2add8a97.50x50o.ad97c61746e8.png","url":"https://www.chess.com/club/i-bagna-cauda","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['gli-abbacchi-doc']={"name":"Gli Abbacchi DOC", "club_id":79500,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79500.7464f9c4.50x50o.f127823db225.png","url":"https://www.chess.com/club/gli-abbacchi-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['le-mozzarelle']={"name":"Le Mozzarelle", "club_id":79544,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79544.a9aad2ac.50x50o.57d6d04ca1cf.png","url":"https://www.chess.com/club/le-mozzarelle","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['chianti-doc']={"name":"Chianti DOC","club_id":79546,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79546.b573e269.50x50o.8ba13052ce81.png","url":"https://www.chess.com/club/chianti-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['gli-scaciucchi']={"name":"Gli Scaciucchi","club_id":79502,"icon":"https://www.chess.com/club/join/79502","icon":"https://images.chesscomfiles.com/uploads/v1/group/79502.b4925ba9.50x50o.5c6b00a69cd6.png","url":"https://www.chess.com/club/gli-scaciucchi","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['i-4-formaggi-doc']={"name":"I 4 Formaggi DOC", "club_id":79506,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79506.375b4d1c.50x50o.139f82627007.png","url":"https://www.chess.com/club/i-4-formaggi-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['straccetti-e-broccoli-doc']={"name":"Straccetti e Broccoli DOC","club_id":79510,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79510.42f4cbbc.50x50o.f47b01837903.png","url":"https://www.chess.com/club/straccetti-e-broccoli-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['i-fan-dellimpepata-di-cozze']={"name":"I Fan dell'Impepata di Cozze","club_id":79540,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79540.8a2da67f.50x50o.9571bd046720.png","url":"https://www.chess.com/club/i-fan-dellimpepata-di-cozze","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['i-4-scacchi-di-lasagne']={"name":"I 4 Scacchi di Lasagne","club_id":79504,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79504.5a4934a4.50x50o.53f1ca78f01e.png","url":"https://www.chess.com/club/i-4-scacchi-di-lasagne","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['gli-ultimi-saranno-i-primi-i-secondi-o-i-contorni']={"name":"gli ultimi saranno i primi i secondi o i contorni","club_id":78984,"icon":"https://images.chesscomfiles.com/uploads/v1/group/78984.0fe19eef.50x50o.008a63d2fd9a.jpeg","url":"https://www.chess.com/club/gli-ultimi-saranno-i-primi-i-secondi-o-i-contorni","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
-teams['team-fastfood-doc']={"name":"Team FastFood DOC","club_id":79318,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79318.d534e8da.50x50o.927f535ba0c6.png","url":"https://www.chess.com/club/team-fastfood-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['pan-di-via']={"name":"Pan di Via", "club_id":79508,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79508.29404629.50x50o.d9ee86bdbcb1.png","url":"https://www.chess.com/club/pan-di-via","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['i-bagna-cauda']={"name":"I Bagna Cauda","club_id":79538,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79538.2add8a97.50x50o.ad97c61746e8.png","url":"https://www.chess.com/club/i-bagna-cauda","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['gli-abbacchi-doc']={"name":"Gli Abbacchi DOC", "club_id":79500,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79500.7464f9c4.50x50o.f127823db225.png","url":"https://www.chess.com/club/gli-abbacchi-doc","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['le-mozzarelle']={"name":"Le Mozzarelle", "club_id":79544,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79544.a9aad2ac.50x50o.57d6d04ca1cf.png","url":"https://www.chess.com/club/le-mozzarelle","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['chianti-doc']={"name":"Chianti DOC","club_id":79546,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79546.b573e269.50x50o.8ba13052ce81.png","url":"https://www.chess.com/club/chianti-doc","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['gli-scaciucchi']={"name":"Gli Scaciucchi","club_id":79502,"icon":"https://www.chess.com/club/join/79502","icon":"https://images.chesscomfiles.com/uploads/v1/group/79502.b4925ba9.50x50o.5c6b00a69cd6.png","url":"https://www.chess.com/club/gli-scaciucchi","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['i-4-formaggi-doc']={"name":"I 4 Formaggi DOC", "club_id":79506,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79506.375b4d1c.50x50o.139f82627007.png","url":"https://www.chess.com/club/i-4-formaggi-doc","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['straccetti-e-broccoli-doc']={"name":"Straccetti e Broccoli DOC","club_id":79510,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79510.42f4cbbc.50x50o.f47b01837903.png","url":"https://www.chess.com/club/straccetti-e-broccoli-doc","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['i-fan-dellimpepata-di-cozze']={"name":"I Fan dell'Impepata di Cozze","club_id":79540,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79540.8a2da67f.50x50o.9571bd046720.png","url":"https://www.chess.com/club/i-fan-dellimpepata-di-cozze","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['i-4-scacchi-di-lasagne']={"name":"I 4 Scacchi di Lasagne","club_id":79504,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79504.5a4934a4.50x50o.53f1ca78f01e.png","url":"https://www.chess.com/club/i-4-scacchi-di-lasagne","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['gli-ultimi-saranno-i-primi-i-secondi-o-i-contorni']={"name":"gli ultimi saranno i primi i secondi o i contorni","club_id":78984,"icon":"https://images.chesscomfiles.com/uploads/v1/group/78984.0fe19eef.50x50o.008a63d2fd9a.jpeg","url":"https://www.chess.com/club/gli-ultimi-saranno-i-primi-i-secondi-o-i-contorni","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
+teams['team-fastfood-doc']={"name":"Team FastFood DOC","club_id":79318,"icon":"https://images.chesscomfiles.com/uploads/v1/group/79318.d534e8da.50x50o.927f535ba0c6.png","url":"https://www.chess.com/club/team-fastfood-doc","puntiInCorso":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
 
 var matchs = [];
 matchs[11] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031850", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
@@ -123,8 +123,6 @@ function caricaMatch(index, url)
             //Aggiorno punteggi team
             teams[team1].penalità += matchs[index].penalità1;
             teams[team2].penalità += matchs[index].penalità2;
-            teams[team1].punti += matchs[index].punti1;
-            teams[team2].punti += matchs[index].punti2;
 
             //Se terminata anche matematicamente
             if (matchs[index].boards * 2 == matchs[index].score1 + matchs[index].score2 || matchs[index].boards < matchs[index].score1 || matchs[index].boards < matchs[index].score2)
@@ -141,6 +139,10 @@ function caricaMatch(index, url)
                     teams[team1].puntiConclusi += 0.5;
                     teams[team2].puntiConclusi += 0.5;
                 }
+            } else {
+                //Match in corso, aggiorno punteggio
+                teams[team1].puntiInCorso += matchs[index].punti1;
+                teams[team2].puntiInCorso += matchs[index].punti2;
             }
             //Controllo giocatori
             var username1 = '';
@@ -220,7 +222,7 @@ function calcolaClassifica()
     //Tolgo dai punti le penalità per calcolare la classifica
     for (var nameTeam in teams)
     {
-        teams[nameTeam].punti -= teams[nameTeam].penalità;
+        teams[nameTeam].puntiMatchRisolti = teams[nameTeam].puntiConclusi;
         teams[nameTeam].puntiConclusi -= teams[nameTeam].penalità;
     }
     //Imposto posizione e salvo
@@ -290,7 +292,7 @@ function calcolaClassifica()
             '<td class="classifica-icon" style="background-color:#E2E2FF;">Pos.</td> <td style="background-color:#E2E2FF;">Team</td><td style="background-color:#E2E2FF;"></td>'+
             '<td class="classifica-icon">Punti</td>' +
             //'<td class="classifica-icon">Tie Break</td>'+
-            '<td class="classifica-icon">Match risolti</td><td class="classifica-icon" >Penalità</td><td class="classifica-icon">Match in corso</td>' +
+            '<td class="classifica-icon">Punti dai match risolti</td><td class="classifica-icon" >Penalità</td><td class="classifica-icon">Punti dai match in corso</td>' +
             '<td class="classifica-col1SEP"></td>'; 
     for (var i in classificaTeams)         
         stRiga += '<td  class="classifica-icon">  <img class="classifica-avatar" src="' + teams[classificaTeams[i]].icon + '">';
@@ -304,11 +306,11 @@ function calcolaClassifica()
             '<td class="classifica-risultati">' + teams[gruppo].posizione + '</td>' +
             '<td class="classifica-risultati" style="border: 0px;"> <a style="color:black;text-decoration: none;font-weight: normal;" href="' + teams[classificaTeams[i]].url + '" target=”_blank”> ' + teams[classificaTeams[i]].name + '</a></td>' +
             '<td class="classifica-risultati" style="border: 0px;"> <img class="classifica-avatar" src="' + teams[classificaTeams[i]].icon + '"></td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].puntiConclusi + '</td>' + //DA VERIFICARE A FINE CLASSIFICA ????
+            '<td class="classifica-risultati">' + teams[gruppo].puntiConclusi + '</td>' + 
             //'<td class="classifica-risultati">' + teams[gruppo].puntiSpareggio + '</td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].matchConclusi + '</td>' +
+            '<td class="classifica-risultati">' + teams[gruppo].puntiMatchRisolti + '</td>' +
             '<td class="classifica-risultati">' + (teams[gruppo].penalità*-1) + '</td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].punti + '</td>' +   //DA VERIFICARE A FINE CLASSIFICA ????
+            '<td class="classifica-risultati">' + teams[gruppo].puntiInCorso + '</td>' +  
             '<td class="classifica-col1SEP" style="border: 0px;"></td>'; 
         for (var ii in classificaTeams)         
         {
