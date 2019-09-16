@@ -279,7 +279,7 @@ function calcolaClassifica()
     var partitaConclusa = false;
     //Riga con nomi teams    
     var stRiga = '<tr class="classifica-nameTeam">' +
-            '<td style="background-color:gray;"></td><td style="background-color:gray;"></td><td style="background-color:gray;"></td><td style="background-color:gray;">' + 
+            '<td style="background-color:gray;"></td><td style="background-color:gray;"></td><td style="background-color:gray;">' + 
             //'</td><td style="background-color:gray;">'+
             '</td><td style="background-color:gray;"></td></td><td style="background-color:gray;"></td></td><td style="background-color:gray;"></td>' +
             '<td class="classifica-col1SEP"></td>'; 
@@ -292,7 +292,8 @@ function calcolaClassifica()
             '<td class="classifica-icon" style="background-color:#E2E2FF;">Pos.</td> <td style="background-color:#E2E2FF;">Team</td><td style="background-color:#E2E2FF;"></td>'+
             '<td class="classifica-icon">Punti</td>' +
             //'<td class="classifica-icon">Tie Break</td>'+
-            '<td class="classifica-icon">Punti dai match risolti</td><td class="classifica-icon" >Penalità</td><td class="classifica-icon">Punti dai match in corso</td>' +
+            '<td class="classifica-icon">Punti dai match risolti</td><td class="classifica-icon" >Penalità</td>' +
+            //'<td class="classifica-icon">Punti dai match in corso</td>' +
             '<td class="classifica-col1SEP"></td>'; 
     for (var i in classificaTeams)         
         stRiga += '<td  class="classifica-icon">  <img class="classifica-avatar" src="' + teams[classificaTeams[i]].icon + '">';
@@ -310,7 +311,7 @@ function calcolaClassifica()
             //'<td class="classifica-risultati">' + teams[gruppo].puntiSpareggio + '</td>' +
             '<td class="classifica-risultati">' + teams[gruppo].puntiMatchRisolti + '</td>' +
             '<td class="classifica-risultati">' + (teams[gruppo].penalità*-1) + '</td>' +
-            '<td class="classifica-risultati">' + teams[gruppo].puntiInCorso + '</td>' +  
+            //'<td class="classifica-risultati">' + teams[gruppo].puntiInCorso + '</td>' +  
             '<td class="classifica-col1SEP" style="border: 0px;"></td>'; 
         for (var ii in classificaTeams)         
         {
@@ -359,21 +360,21 @@ function calcolaClassifica()
                         if (score1 == score2)
                         {
                             risultato = '0.5 - 0.5 <BR> (' + score1 + ' - ' + score2 + ')';
-                            stileTD = 'style="background-color:#84b2ed;"';   //PAREGGIO
+                            stileTD = 'style="background-color:#84b2ed;border: 1px solid black;"';   //PAREGGIO
                             stile = 'color:black;font-weight: bold;';
                         } 
                         //Vinto team 1
                         if (score1 > score2)
                         {
                             risultato = '1 - 0 <BR> (' + score1 + ' - ' + score2 + ')';
-                            stileTD = 'style="background-color:#4bc74b;"'; //VINTO
+                            stileTD = 'style="background-color:#4bc74b;border: 1px solid black;"'; //VINTO
                             stile = 'color:black;font-weight: bold;';
                         } 
                         //Vinto team 2
                         if (score1 < score2)
                         {
                             risultato = '0 - 1 <BR> (' + score1 + ' - ' + score2 + ')';
-                            stileTD = 'style="background-color:#f75959;"';  //PERSO
+                            stileTD = 'style="background-color:#f75959;border: 1px solid black;"';  //PERSO
                             stile = 'color:black;font-weight: bold;';
                         } 
                     } else {
@@ -388,6 +389,7 @@ function calcolaClassifica()
                         //Vinto team 2
                         if (score1 < score2)
                             stile = 'color:red;';
+                        stileTD = 'style="border: 1px solid black;"';  //PERSO
                     }
                 }
             }
