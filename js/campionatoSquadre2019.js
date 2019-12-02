@@ -51,14 +51,14 @@ matchs[44] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/matc
 matchs[45] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1062814", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[46] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1062816", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
-/*
-matchs[51] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[52] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[53] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[54] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[55] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[56] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[51] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1072416", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[52] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1072418", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[53] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1072420", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[54] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1072422", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[55] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1072430", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[56] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1072432", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
+/*
 matchs[61] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[62] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[63] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
