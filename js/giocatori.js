@@ -172,7 +172,7 @@ function calcolaClassificaGiocatori()
         maxSpareggio = -1;
         for (var i in giocatori)
         {
-            if ((giocatori[i].posizione == 0) && (giocatori[i].punti > max || (giocatori[i].punti == max) && giocatori[i].puntiSpareggio > maxSpareggio)) {
+            if ((giocatori[i].posizione == 0) && (giocatori[i].punti > max || (giocatori[i].punti == max) && giocatori[i].puntiSpareggio > maxSpareggio) && bannati.indexOf(i) == -1) {
                 username = i;
                 max = giocatori[i].punti;
                 maxSpareggio = giocatori[i].puntiSpareggio;
