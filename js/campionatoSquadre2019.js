@@ -257,8 +257,6 @@ function caricaMatch(index, url)
             matchs[index].boards = data.boards - matchs[index].bannati;
             matchs[index].team1 = team1;
             matchs[index].team2 = team2;
-            matchs[index].scoreOLD1 = data.teams.team1.score - matchs[index].bannatiScore1;
-            matchs[index].scoreOLD2 = data.teams.team2.score - matchs[index].bannatiScore2;
             matchs[index].score1 = matchs[index].score1 - matchs[index].bannatiScore1;
             matchs[index].score2 = matchs[index].score2 - matchs[index].bannatiScore2;
             if (data.teams.team1.score > data.teams.team2.score) 
@@ -437,8 +435,6 @@ function calcolaClassifica()
     var boards = '';
     var score1 = 0;
     var score2 = 0;
-    var scoreOLD1 = 0;
-    var scoreOLD2 = 0;
     var partitaConclusa = false;
     //Riga con nomi teams    
     var stRiga = '<tr class="classifica-nameTeam">' +
@@ -500,8 +496,6 @@ function calcolaClassifica()
                         boards = matchs[partita].boards;
                         score1 = matchs[partita].score1;
                         score2 = matchs[partita].score2;
-                        scoreOLD1 = matchs[partita].scoreOLD1;
-                        scoreOLD2 = matchs[partita].scoreOLD2;
                         partitaConclusa = matchs[partita].concluso;
                     } 
                     //team da stampare sulla riga è team2
@@ -511,8 +505,6 @@ function calcolaClassifica()
                         boards = matchs[partita].boards;
                         score1 = matchs[partita].score2;
                         score2 = matchs[partita].score1;
-                        scoreOLD1 = matchs[partita].scoreOLD2;
-                        scoreOLD2 = matchs[partita].scoreOLD1;
                         partitaConclusa = matchs[partita].concluso;
                     }
                 }
@@ -558,8 +550,6 @@ function calcolaClassifica()
                             stile = 'color:red;';
                         stileTD = 'style="border: 1px solid black;"';  //PERSO
                     }
-                    if (score1 != scoreOLD1) risultato += '<BR> [' + scoreOLD1 + ' - ' + scoreOLD2 + ']';
-                    if (score2 != scoreOLD2) risultato += '<BR> [' + scoreOLD1 + ' - ' + scoreOLD2 + ']';
                 }
             }
                     
