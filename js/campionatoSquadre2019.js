@@ -102,13 +102,20 @@ matchs[94] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/matc
 matchs[95] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1109528", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 matchs[96] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1109530", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 
+matchs[101] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119972", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[102] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119974", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[103] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119978", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[104] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119980", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[105] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119982", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[106] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119984", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+
 /*
-matchs[1] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[2] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[3] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[4] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[5] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[6] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[111] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[112] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[113] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[114] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[115] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[116] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 
 */
 
