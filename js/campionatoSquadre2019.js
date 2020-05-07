@@ -38,6 +38,8 @@ teams['team-fastfood-doc']={"name":"Team FastFood DOC","club_id":79318,"icon":"h
 
 var matchs = [];
 //matchs[71] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1091748", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+
+//matchs[1] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1062814", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 //*
 matchs[11] = {"penalità1":0.5,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031850", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 matchs[12] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1031852", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
@@ -225,36 +227,49 @@ function caricaMatch(index, url)
 
                 }
                 //Team 2
-                if (data.teams.team2.players[i].status == 'closed:fair_play_violations' && data.teams.team1.players[i].status != 'closed:fair_play_violations') {  //Per gestire se sono stati bannati entrambi i giocatori
-                    username2 = data.teams.team2.players[i].username;
-                    bannati.push(username2);
-                    matchs[index].bannati ++;
-                    //Partita con nero
-                    if (data.teams.team2.players[i].played_as_black ) { //Se la partita non è ancora conclusa non è definito
-                        if (data.teams.team2.players[i].played_as_black == 'win') {
-                            matchs[index].bannatiScore2 ++;
-                        } else {
-                            if ((data.teams.team2.players[i].played_as_black == 'agreed') || (data.teams.team2.players[i].played_as_black == 'repetition')  || (data.teams.team2.players[i].played_as_black == 'timevsinsufficient') || 
-                                (data.teams.team2.players[i].played_as_black == '50move') || (data.teams.team2.players[i].played_as_black == 'insufficient') || (data.teams.team2.players[i].played_as_black == 'stalemate')  ){
-                                    matchs[index].bannatiScore1 += 0.5;
-                                    matchs[index].bannatiScore2 += 0.5;
+                if (data.teams.team2.players[i].status == 'closed:fair_play_violations') {  //Per gestire se sono stati bannati entrambi i giocatori
+                    //Controllo se è stato eliminato anche il giocatore con i bianchi
+                    var daEliminare = true;
+                    var board = data.teams.team2.players[i].board;
+                    for (var iBoard in data.teams.team1.players) {
+                        if (board == data.teams.team1.players[iBoard].board) {
+                            if (data.teams.team1.players[iBoard].status == 'closed:fair_play_violations') {
+                                bannati.push(username2);
+                                daEliminare = false;
+                            }
+
+                        }
+                    }    
+                    //Se l'altro giocatore non è stato elimiato elimino la partita
+                    if (daEliminare) {
+                        matchs[index].bannati ++;
+                        //Partita con nero
+                        if (data.teams.team2.players[i].played_as_black ) { //Se la partita non è ancora conclusa non è definito
+                            if (data.teams.team2.players[i].played_as_black == 'win') {
+                                matchs[index].bannatiScore2 ++;
                             } else {
-                                matchs[index].bannatiScore1 ++;
+                                if ((data.teams.team2.players[i].played_as_black == 'agreed') || (data.teams.team2.players[i].played_as_black == 'repetition')  || (data.teams.team2.players[i].played_as_black == 'timevsinsufficient') || 
+                                    (data.teams.team2.players[i].played_as_black == '50move') || (data.teams.team2.players[i].played_as_black == 'insufficient') || (data.teams.team2.players[i].played_as_black == 'stalemate')  ){
+                                        matchs[index].bannatiScore1 += 0.5;
+                                        matchs[index].bannatiScore2 += 0.5;
+                                } else {
+                                    matchs[index].bannatiScore1 ++;
+                                }
                             }
                         }
-                    }
-                    //Partita con bianco
-                    if (data.teams.team2.players[i].played_as_white ) { //Se la partita non è ancora conclusa non è definito
-                        if (data.teams.team2.players[i].played_as_white == 'win') {
-                            matchs[index].bannatiScore2 ++;
-                        } else {
-                            if ((data.teams.team2.players[i].played_as_white == 'agreed') || (data.teams.team2.players[i].played_as_white == 'repetition')  || (data.teams.team2.players[i].played_as_white == 'timevsinsufficient') || 
-                                (data.teams.team2.players[i].played_as_white == '50move') || (data.teams.team2.players[i].played_as_white == 'insufficient') || (data.teams.team2.players[i].played_as_white == 'stalemate')  ){
-                                    matchs[index].bannatiScore1 += 0.5;
-                                    matchs[index].bannatiScore2 += 0.5;
+                        //Partita con bianco
+                        if (data.teams.team2.players[i].played_as_white ) { //Se la partita non è ancora conclusa non è definito
+                            if (data.teams.team2.players[i].played_as_white == 'win') {
+                                matchs[index].bannatiScore2 ++;
                             } else {
-                                matchs[index].bannatiScore1 ++;
-                            }
+                                if ((data.teams.team2.players[i].played_as_white == 'agreed') || (data.teams.team2.players[i].played_as_white == 'repetition')  || (data.teams.team2.players[i].played_as_white == 'timevsinsufficient') || 
+                                    (data.teams.team2.players[i].played_as_white == '50move') || (data.teams.team2.players[i].played_as_white == 'insufficient') || (data.teams.team2.players[i].played_as_white == 'stalemate')  ){
+                                        matchs[index].bannatiScore1 += 0.5;
+                                        matchs[index].bannatiScore2 += 0.5;
+                                } else {
+                                    matchs[index].bannatiScore1 ++;
+                                }
+                            }    
                         }
                     }
                 }
