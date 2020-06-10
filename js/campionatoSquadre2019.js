@@ -111,15 +111,14 @@ matchs[104] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/mat
 matchs[105] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119982", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 matchs[106] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1119984", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 
-/*
-matchs[111] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[112] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[113] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[114] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[115] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
-matchs[116] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[111] = {"penalità1":0,"penalità2":0.5,"id":"https://api.chess.com/pub/match/1130782", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[112] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1130784", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[113] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1130786", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[114] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1130788", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[115] = {"penalità1":0,"penalità2":0,"id":"https://api.chess.com/pub/match/1130894", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
+matchs[116] = {"penalità1":0.5,"penalità2":0,"id":"https://api.chess.com/pub/match/1130794", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false, "score1":0, "score2":0, "bannati":0, "bannatiScore1":0, "bannatiScore2":0};
 
-*/
+
 
 //teams['team-italia-doc']={"name":"Team Italia DOC","club_id":79318,"icon":"https://images.chesscomfiles.com/uploads/v1/group/65264.ad20dc08.50x50o.1ba052e2d947.png","url":"https://www.chess.com/club/team-fastfood-doc","punti":0,"penalità":0,"puntiSpareggio":0, "posizione":0, "matchConclusi":0, "puntiConclusi":0, "teamVinte" : [], "teamPatte" : []};
 //teams['purple-haze']={"name":"PURPLE HAZE","club_id":79318,"icon":"https://images.chesscomfiles.com/uploads/v1/group/5140.5fe353d8.50x50o.b653b7d9fcb8.gif","url":"https://www.chess.com/club/team-fastfood-doc","punti":0,"penalità":0,"puntiSpareggio":0, "matchConclusi":0, "puntiConclusi":0, "posizione":0, "teamVinte" : [], "teamPatte" : []};
