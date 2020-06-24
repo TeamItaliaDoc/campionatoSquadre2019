@@ -358,6 +358,17 @@ function caricaMatch(index, url)
             return;  
             calcolaClassificaRun = true;
 
+        //Correggo il match 1130894 che è stata divisa in due partite
+        matchs[115].score1 ++;
+        matchs[115].score2 ++;
+        matchs[115].boards ++;
+        giocatori['dag_stinner'].punti ++;
+        giocatori['dag_stinner'].vinte ++;
+        giocatori['dag_stinner'].perse ++;
+        giocatori['andrea71ra'].punti ++;
+        giocatori['andrea71ra'].vinte ++;
+        giocatori['andrea71ra'].perse ++;
+
         //Calcolo la classifica dei team
         calcolaClassifica();
   
